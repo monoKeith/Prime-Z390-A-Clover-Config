@@ -14,7 +14,7 @@
 ### Ai Tweaker
 * Ai Overclock Tuner: XMP II
 * ASUS MultiCore Enhancement: Enabled - Remove All limits
-* DRAM Frequency: DDR4-2666Mhz [I have stability issues (display halt) if I run at memory's native 3200Mhz]
+* DRAM Frequency: DDR4-2666Mhz [I have stability issues (display halt) if I run at memory's default 3200Mhz]
 * DRAM Voltage: 1.30000 [Unnecessary RAM tweeking]
 
 
@@ -55,12 +55,35 @@ PCI Express Configuration -> PCIe Speed: Gen3
 * Legacy USB Support: Disabled
 * XHCI Hand-off: Enabled
 
-## Boot
+### Boot
 
-### Boot Configuration
+#### Boot Configuration
 * Fast Boot: Disabled
 
-### Secure Boot
+#### Secure Boot
 * OS Type: Windows UEFI Mode
 
 ---
+## IO Ports
+
+By using [Hackintool](https://github.com/headkaze/Hackintool), I selected 15 USB ports that I needed and blocked the rest of them. You probably need different configuration to make your setup works (either reconfigurate or avoid using ports that are blocked).
+
+* Green: Ports that works
+* Red: Ports that won't work 
+
+![Rear](/Pictures/rearIO.png)
+
+* Some devices that are not being supported on macOS will cause problems. For example, my Oculus Rift S (which doesn't have software support under macOS) causes instant wakeup, the solution is to plug it into one of the ports that are blocked, so it won't even show up under IORegistryExplorer.
+
+* The configuration was set to use discrete graphics, so the onboards video output won't work.
+
+![Front](/Pictures/frontIO.png)
+
+* I used the bottom connector from USB1112 for Bluetooth connection integraded to my wireless card (Fenvi T919). USB_E12 and USB_E34 was connected internally via a USB 2.0 Hub, not only makes the USB device tree looks messy, but also brings some chances of not being able to discover Bluetooth hardware if the Bluetooth USB is connected to one of them.
+
+* Although I blocked USB_E12 and USB_E34 in the configuration, they are still useful for connecting devices that works on Windows but not needed for macOS, like AIO water pump and RGB controller.
+
+* My case doesn't have a front USB-C connector, so the U31G1_C5 is blocked.
+
+---
+## Setting up the RX 5700 XT
