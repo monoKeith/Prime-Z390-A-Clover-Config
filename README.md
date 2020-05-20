@@ -90,15 +90,15 @@ By using [Hackintool](https://github.com/headkaze/Hackintool), I selected 15 USB
 
 Boot into Windows, check graphics card revision and board ID using [GPU-Z](https://www.techpowerup.com/gpuz/).
 
-![GPU-Z](/pictures/graphicsRevision.png)
+![GPU-Z](/Pictures/graphicsRevision.png)
 
 * Just hover the mouse on BIOS Version
 
 These two number is corresponding to ROM revision and EFI Driver version on macOS, we need to put the correct number in Clover configuration.
 
-![Graphics](/pictures/graphics.png)
+![Graphics](/Pictures/graphics.png)
 
 Open Clover config file, update the corresponding value to match your Radeon RX 5700 XT.
 
-![Revision](/pictures/gpuRevision.png)
+![Revision](/Pictures/gpuRevision.png)
 
