@@ -118,3 +118,14 @@ Open Clover config file with Clover Configurator
 ![systemPref](/Pictures/systemPref.png)
 
 * Click 'Generate New' Custom UUID.
+
+---
+## Benchmark
+
+Geekbench 5:
+
+![CPU](/Pictures/CPU.png)
+
+![OpenCL](/Pictures/OpenCL.png)
+
+![Metal](/Pictures/Metal.png)
