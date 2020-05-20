@@ -94,7 +94,7 @@ Boot into Windows, check graphics card revision and board ID using [GPU-Z](https
 
 * Just hover the mouse on BIOS Version
 
-These two number is corresponding to ROM revision and EFI Driver version on macOS, we need to put the correct number in Clover configuration.
+These two numbers correspond to ROM revision and EFI Driver version on macOS, we need to put the correct number in Clover configuration.
 
 ![Graphics](/Pictures/graphics.png)
 
