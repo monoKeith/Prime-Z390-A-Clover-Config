@@ -126,6 +126,4 @@ Geekbench 5:
 
 ![CPU](/Pictures/CPU.png)
 
-![OpenCL](/Pictures/OpenCL.png)
-
 ![Metal](/Pictures/Metal.png)
