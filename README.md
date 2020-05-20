@@ -90,7 +90,7 @@ By using [Hackintool](https://github.com/headkaze/Hackintool), I selected 15 USB
 
 Boot into Windows, check graphics card revision and board ID using [GPU-Z](https://www.techpowerup.com/gpuz/).
 
-![GPU-Z](/Pictures/graphicsRevision.png)
+![GPU-Z](/Pictures/graphicsRevision.PNG)
 
 * Just hover the mouse on BIOS Version
 
@@ -102,3 +102,19 @@ Open Clover config file, update the corresponding value to match your Radeon RX 
 
 ![Revision](/Pictures/gpuRevision.png)
 
+---
+## Before booting up
+
+* I removed HFSPlus driver because I don't need it after installation. If you need to boot installer from USB, just add HFSPlus.efi to CLOVER/drivers/UEFI
+
+## Before signing in Apple ID
+
+Open Clover config file with Clover Configurator
+
+![SMBIOS](/Pictures/SMBIOS.png)
+
+* Click 'Generate New' for Serial Number and SmUUID, then click 'check coverage' to make sure the serial number isn't occupied by a real Mac.
+
+![systemPref](/Pictures/systemPref.png)
+
+* Click 'Generate New' Custom UUID.
