@@ -86,4 +86,19 @@ By using [Hackintool](https://github.com/headkaze/Hackintool), I selected 15 USB
 * My case doesn't have a front USB-C connector, so the U31G1_C5 is blocked.
 
 ---
-## Setting up the RX 5700 XT
+## Setting up the Radeon RX 5700 XT
+
+Boot into Windows, check graphics card revision and board ID using [GPU-Z](https://www.techpowerup.com/gpuz/).
+
+![GPU-Z](/pictures/graphicsRevision.png)
+
+* Just hover the mouse on BIOS Version
+
+These two number is corresponding to ROM revision and EFI Driver version on macOS, we need to put the correct number in Clover configuration.
+
+![Graphics](/pictures/graphics.png)
+
+Open Clover config file, update the corresponding value to match your Radeon RX 5700 XT.
+
+![Revision](/pictures/gpuRevision.png)
+
