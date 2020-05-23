@@ -143,9 +143,9 @@ Open Clover config file with Clover Configurator
 
     This is MODIFIED version found from [here](https://bbs.pcbeta.org/viewthread-1836920-1-1.html). 
     
-    The modified version removed unnecessary stuff (and only keep the AGDP black screen patch which is necessary for RX 5700 XT) from the original version. So that renaming for HECI, IGPU, GFX0 is needed to be done by Clover ACPI patch (which used to be handled by the original version of WhateverGreen).
+    This version removed unnecessary stuff (and only keep the AGDP black screen patch which is necessary for RX 5700 XT) from the original version. Therefore renaming for HECI, IGPU, GFX0 are needed to be done by Clover ACPI patch (which used to be handled by the original version of WhateverGreen).
 
-    Since almost everything in the original kext was removed, device id injection for both Intel UHD Graphics and the RX 5700 XT needed to be added to Clover device property manually (I already did).
+    Since almost everything in the original kext was removed, device id injection for both Intel UHD Graphics and the RX 5700 XT are necessary to be added to Clover device property manually (I already did).
 
 * DAGPM.kext
 
@@ -155,10 +155,27 @@ Open Clover config file with Clover Configurator
     <cite>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/IOPP/pci-bridge@0/IOPP/display@0/AMDRadeonX6000_AmdRadeonControllerNavi10/ATY,Adder@0/AGPM</cite>
 
 ---
+## What Works?
+
+Native CPU power management / iGPU frequency management
+
+![CPU](/Pictures/CPU.png)
+
+Intel iGPU H.264/ HEVC Acceleration
+
+![iGPU](/Pictures/iGPU.png)
+
+Radeon RX 5700 XT pretended to be a Radeon Pro W5700X
+
+![dGPU](/Pictures/dGPU.png)
+
+---
 ## Benchmark
 
 Geekbench 5:
 
-![CPU](/Pictures/CPU.png)
+![CPU_Bench](/Pictures/CPU_Bench.png)
 
-![Metal](/Pictures/Metal.png)
+![Metal_Bench](/Pictures/Metal_Bench.png)
+
+![OpenCL_Bench](/Pictures/OpenCL_Bench.png)
