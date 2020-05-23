@@ -40,6 +40,18 @@
 			<dict>
 				<key>Mac-AA95B1DDAB278B95</key>
 				<dict>
+					<key>IGPU</key>
+					<dict>
+						<key>Heuristic</key>
+						<dict>
+							<key>EnableOverride</key>
+							<integer>0</integer>
+							<key>ID</key>
+							<integer>2</integer>
+						</dict>
+						<key>control-id</key>
+						<integer>16</integer>
+					</dict>
 					<key>GFX0</key>
 					<dict>
 						<key>AGDCEnabled</key>

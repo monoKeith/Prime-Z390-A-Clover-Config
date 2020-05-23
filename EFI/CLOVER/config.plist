@@ -27,7 +27,7 @@
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>RUhDMQ==</data>
 					<key>Replace</key>
@@ -37,7 +37,7 @@
 					<key>Comment</key>
 					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>RUhDMg==</data>
 					<key>Replace</key>
@@ -67,11 +67,21 @@
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change PEGP to GFX0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>UEVHUA==</data>
+					<key>Replace</key>
+					<data>R0ZYMA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -82,16 +92,6 @@
 					<data>UEVHUA==</data>
 					<key>Replace</key>
 					<data>RUdQMA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PEGP to GFX0</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>UEVHUA==</data>
-					<key>Replace</key>
-					<data>R0ZYMA==</data>
 				</dict>
 			</array>
 		</dict>
@@ -160,11 +160,11 @@
 				<key>ATY,DeviceName</key>
 				<string>W5700X</string>
 				<key>ATY,EFIVersion</key>
-				<string>017.001.000.049.000000</string>
+				<string>01.01.190</string>
 				<key>ATY,FamilyName</key>
 				<string>Radeon Pro</string>
 				<key>ATY,Rom#</key>
-				<string>N/A</string>
+				<string>113-D3220E-190</string>
 				<key>CAIL_EnableLBPWSupport</key>
 				<integer>0</integer>
 				<key>CAIL_EnableMaxPlayloadSizeSync</key>
@@ -236,6 +236,19 @@
 				<key>name</key>
 				<string>ATY_GPU</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwCYPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device_type</key>
+				<string>Display controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630</string>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -251,7 +264,6 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>Games</string>
 			<string>Preboot</string>
 			<string>Recovery</string>
 			<string>Windows</string>
@@ -295,7 +307,7 @@
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -348,7 +360,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02045130J9LNV9FB</string>
+		<string>C02953501CDLNV91F</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -378,16 +390,16 @@
 		<key>ProductName</key>
 		<string>iMac19,1</string>
 		<key>SerialNumber</key>
-		<string>C02DNMY0JV3Q</string>
+		<string>C02C1PZ6JV3Q</string>
 		<key>SmUUID</key>
-		<string>EFCA0762-1F1C-4C96-83A0-DFB2ED839F07</string>
+		<string>A7707E53-B58B-48D8-9534-C4607841BAC5</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>ABC0771D-181A-484A-B81B-C21412598CB6</string>
+		<string>A4626EC4-6CA0-4617-AF20-30507686F63F</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
