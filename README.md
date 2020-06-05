@@ -139,13 +139,9 @@ Open Clover config file with Clover Configurator
 ---
 ## Kexts
 
-* WhateverGreen.kext
+* AirportBrcmFixup.kext
 
-    This is MODIFIED version found from [here](https://bbs.pcbeta.org/viewthread-1836920-1-1.html). 
-    
-    This version removed unnecessary stuff (and only keep the AGDP black screen patch which is necessary for RX 5700 XT) from the original version. Therefore renaming for HECI, IGPU, GFX0 are needed to be done by Clover ACPI patch (which used to be handled by the original version of WhateverGreen).
-
-    Since almost everything in the original kext was removed, device id injection for both Intel UHD Graphics and the RX 5700 XT are necessary to be added to Clover device property manually (I already did).
+    This kext is needed for better wireless support for my FV-T919 wireless card. Although the card works witout this kext, it gets painfully slow and the connection crashes frequently.
 
 * DAGPM.kext
 
